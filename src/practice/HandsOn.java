@@ -9,12 +9,12 @@ public class HandsOn {
 		System.out.print("好きな整数を入力してください:");
 		String inputnum = scanner.nextLine();
 		int num = Integer.parseInt(inputnum);
-		if (num % 2 == 0) {
+		if (num == 0) {
+			System.out.println("入力された値は0です");
+		} else if (num % 2 == 0) {
 			System.out.println("入力された値は偶数です");
-		} else if (num % 2 != 0) {
-			System.out.println("入力された値は奇数です");
 		} else {
-			System.out.println("無効な入力です");//0を入力したときだけ違う出力にする方法がわからない
+			System.out.println("入力された値は奇数です");
 		}
 		scanner.close();
 	}
